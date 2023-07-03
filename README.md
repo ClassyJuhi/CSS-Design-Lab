@@ -28,7 +28,7 @@ This repository is licensed under the [MIT License](LICENSE). Feel free to use t
 
 ## Connect
 
-If you have any questions or just want to say hello, feel free to connect with me on  [LinkedIn](www.linkedin.com/in/classy-juhi)  or [Email](1juhisingh1@gmail.com).
+If you have any questions or just want to say hello, feel free to connect with me on  [LinkedIn](https://www.linkedin.com/in/classy-juhi/)  or [Email](1juhisingh1@gmail.com).
 
 Happy exploring and designing with CSS!
 
