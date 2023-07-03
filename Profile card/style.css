@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+     background: linear-gradient(to right bottom, 	#dddddd, 	#ffffff,	#ffdede,	#b8f3ff );
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+ }
+ .container{
+     height: 400px;
+     width: 350px;
+     border-radius:15px;
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .item1{
+     height: 160px;
+     width: 350px;
+     background-color: #0b5394;
+     border-radius: 15px 15px 0 0;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+ }
+ .item1::before{
+     content: "";
+     height: 120px;
+     width: 120px;
+     border-radius: 100px;
+     background-color: #0b5394;
+     margin-bottom: -30px;
+     left:-50%;
+ }
+ .item1::after{
+     content: "";
+     height: 116px;
+     width: 116px;
+     border: 2px solid white;
+     border-radius: 100px;
+     background-image: url(https://media.istockphoto.com/id/994101952/photo/smiling-confident-businesswoman-looking-at-camera-in-office-headshot-portrait.jpg?s=612x612&w=0&k=20&c=E0jQ9Fv1p_s_s6CI4_s5h7SOnVXauh6zMcTQa4LjYBw=);
+     background-size: cover;
+     background-position: 50% ;
+     background-repeat: no-repeat;
+     margin-bottom: -27px;
+     position:absolute;
+ }
+ .section2{
+     height: 240px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+ }
+ .item2{
+     margin-top: 20px;
+ }
+ .item3{
+     margin-top: -20px;
+ }
+ .item4{
+     display: flex;
+     flex-direction:row;
+     justify-content: center;
+     align-content: space-around;
+ }
+ .social-media img{
+     height: 40px;
+     width: 40px;
+ }
+ .item5 [type=button]{
+     height: 25px;
+     width: 75px;
+     border-radius: 15px;
+     background-color:  #0b5394;
+     color: white;
+     border: none;
+ }
+ .item6{
+     display: flex;
+     flex-direction:row;
+     justify-content: center;
+     align-content: space-around;
+ }
+ .item6 div{
+     height: 15px;
+     width: 60px;
+     background-color: white;
+     margin: 2px;
+     border-left:2px solid black;
+     white-space: pre;
+     
+ }
+ .response img{
+     height: 15px;
+     width: 15px;
+     vertical-align:top;
+ }
