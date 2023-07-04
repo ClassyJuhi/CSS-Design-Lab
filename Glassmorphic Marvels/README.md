@@ -2,6 +2,10 @@
 
 Glassmorphic Marvels is a web project that combines the captivating design trend of glassmorphism with the wonders of nature. It showcases a collection of stunning natural phenomena, accompanied by their names and images, presented in a visually appealing glassmorphic design.
 
+## Screenshots 
+![image](https://github.com/ClassyJuhi/CSS-Design-Lab/assets/103419567/8aa42672-9ec5-4dca-8789-055e514daf99)
+
+
 ## Features
 
 - Glassmorphic design: The project utilizes HTML and CSS to create a beautiful glass-like appearance, with transparent elements, blurred backgrounds, and subtle lighting effects.
