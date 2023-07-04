@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,200;1,200&family=Rancho&family=Rubik+Pixels&family=Sedgwick+Ave+Display&display=swap');
+
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #02101d;
+    color: white;
+}
+
+.background{
+    width: 100%;
+    min-height: 100vh;
+    position:relative;
+}
+
+.background .circle1,.circle2{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background: linear-gradient(to right,#8c198c, #b266b2,#cc99cc,#f2e5f2);
+    position:absolute;
+}
+
+.background .circle1{
+    top: 135px;
+    left: 25%;
+}
+
+.background .circle2{
+    top: 350px;
+    right: 25%;
+    background: linear-gradient(to right ,#f2e5f2,#cc99cc, #b266b2 ,#8c198c);
+}
+
+.card{
+    height: 250px;
+    width: 420px;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255,0.1);
+    background-size: cover;
+    backdrop-filter: blur(25px);
+    box-shadow: 0 25px 45px rgb(255, 255, 255,0.15) ;
+    position:absolute;
+    top: 37vh;
+    left: 34%;
+    backface-visibility: hidden;
+}
+
+.content1{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background-color: rgb(204, 0, 0,0.9);
+    position: relative;
+    top: 35px;
+    left: 20px;
+}
+
+.content1::before{
+    content: "";
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background-color: rgb(255, 166, 0,0.6);
+    position:absolute;
+    top: 0px;
+    left: 18px;
+}
+
+.content1::after{
+    content: "Master Card";
+    font-size: 18px;
+    color: white;
+    position:absolute;
+    top: 5px;
+    right: -150px;
+}
+
+.content2 img{
+    height: 60px;
+    width: 70px;
+    object-fit: contain;
+    position: relative;
+    top: -12px;
+    left: 325px;
+}
+
+.content2::before{
+    content: "Valid till";
+    position:absolute;
+    right:40px;
+    bottom:70px;
+}
+
+.content2::after{
+    content: "05/28";
+    font-size: 20px;
+    position:absolute;
+    right: 42px;
+    bottom:40px;
+}
+
+.content3{
+    font-size: 15px;
+    position:relative;
+    top:10px;
+    left:30px;
+}
+
+.content3::before{
+    content: "8050 5040 2030 3020";
+    font-size: 22px;
+    letter-spacing: 1.5;
+    position:absolute;
+    right: px;
+    top:30px;
+}
+
+.content3::after{
+    content: "Prem Kumar Shahi";
+    font-size: 18px;
+    position:absolute;
+    left: 0px;
+    top:90px;
+}
+
+.backside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card.backside{
+    transform: rotateY(180deg);
+}
+
+.contenta{
+    margin: 20px 30px ;
+    font-size: 10px;
+}
+
+.contentb{
+    height: 45px;
+    width: 100%;
+    background-color: black;
+    margin-top: -30px;
+}
+
+.contentc{
+    height: 40px;
+    width: 70%;
+    border-radius: 5px;
+    background: repeating-linear-gradient(to right bottom, #bccdde,#cdbcde 5px,#bcdecd 1px  );
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-left: 30px;
+    position:relative;
+}
+
+.contentc::after{
+    content: "055";
+    height: 30px;
+    width: 50px;
+    text-align:right;
+    padding-right:5px;
+    box-sizing:border-box;
+    z-index:-1;
+    background-color: white;
+    color:gray;
+    position: absolute;
+    right: -35px;
+    top: 6px;
+    line-height:30px;
+}
+
+.contentd{
+    margin: 20px 30px;
+    font-size: 13px;
+}
+
+.container{
+    transform-style: preserve-3d;
+    transition: 2s;
+}
+
+.container:hover{
+    transform: rotateY(180deg);
+}
