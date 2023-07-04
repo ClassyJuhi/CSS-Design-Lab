@@ -6,7 +6,7 @@ Translucent FlipCard is a beautiful credit card design created using HTML and CS
 
 To see the Translucent FlipCard in action, simply hover over the card and observe the mesmerizing flip animation.
 
-[View Demo](link-to-demo)
+[View Demo](https://codepen.io/Classy_Juhi/pen/zYmgqrM)
 
 ## Usage
 
