@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #efe0ef;
+}
+.container{
+    height: 700px;
+    width: 1200px;
+    position: relative;
+}
+.signup,.login{
+    height:  550px;
+    width: 350px;
+    background-color: #efe0ef;
+    border-radius: 15px;
+}
+.signup{
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    box-shadow: 20px 20px 20px #e7d0e7  ,-20px -20px 20px #f7eff7;
+}
+.login{
+    position: absolute;
+    bottom: 30px;
+    right: 150px;
+    box-shadow: 20px 20px 20px #e7d0e7  ,-20px -20px 20px #f7eff7;
+}
+.profile{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: 40px auto 15px auto;
+    box-shadow: 25px 25px 15px #e7d0e7 inset ,-25px -25px 15px #f7eff7 inset;
+}
+h2{
+    text-align: center;
+    color: #6c596c;
+}
+.sign{
+    display: block;
+    height: 35px;
+    width: 70%;
+    margin:15px auto;
+    background-color: #ebd8eb;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #e7d0e7  ,-5px -5px 5px #f7eff7 ;
+    padding: 5px 20px;
+    color: #6c596c;
+    font-size: 18px;
+    font-weight: 500;
+}
+.log{
+    display: block;
+    height: 35px;
+    width: 70%;
+    margin:25px auto;
+    background-color: #ebd8eb;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #e7d0e7  ,-5px -5px 5px #f7eff7 ;
+    padding: 5px 20px;
+    color: #6c596c;
+    font-size: 18px;
+    font-weight: 500;
+}
+#button{
+     box-shadow: 5px 5px 5px #e7d0e7 inset  ,-5px -5px 5px #f7eff7  inset;
+     height: 45px;
+     width: 60%;
+     font-weight: 650;
+}
+h3{
+    text-align: center;
+    color: #c2a0c2;
+    font-weight: 800;
+}
+.link{
+    height: 50px;
+    width: 50px;
+    box-shadow: 5px 5px 5px #e7d0e7  ,-5px -5px 5px #f7eff7 ;
+    box-sizing: border-box;
+}
+.link:hover{
+    box-shadow: 5px 5px 5px #e7d0e7 inset ,-5px -5px 5px #f7eff7 inset;
+}
+.link1{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    padding: 5px;
+}
+.link2{
+    position: absolute;
+    bottom: 30px;
+    left: 110px;
+    padding: 5px;
+}
+.link3{
+    position: absolute;
+    bottom: 30px;
+    right: 110px;
+    padding: 5px;
+}
+.link4{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 5px;
+}
+.smile{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    border-bottom: 5px solid #403540;
+    position:absolute;
+    top: 40px;
+    left: 137px;
+}
+.check1 {
+    position: absolute;
+    top: 65px;
+    left: 185px;
+    height: 25px;
+    width: 15px;
+    background-color: #403540;
+    border-radius: 50%;
+}
+
+  .check2 {
+    position: absolute;
+    top: 65px;
+    left: 155px;
+    height: 25px;
+    width: 15px;
+    background-color: #403540;
+    border-radius: 50%;
+  }
