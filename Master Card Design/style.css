@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,200;1,200&family=Rancho&family=Rubik+Pixels&family=Sedgwick+Ave+Display&display=swap');
+
+body{
+    background: linear-gradient(to right bottom, #dbf0f9,#abdcf1,#6ca4bc , #436775 );
+    font-family: 'Bebas Neue', sans-serif;
+    min-height: 100vh;
+    color: white;
+}
+.card{
+    height: 250px;
+    width: 420px;
+    border-radius: 20px;
+    background-image: url("https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149157312.jpg");
+    background-size: cover;
+    backdrop-filter: blur(25px);
+    position:absolute;
+    top: 37vh;
+    left: 34%;
+}
+.content1{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background-color: rgb(204, 0, 0,0.9);
+    position: relative;
+    top: 35px;
+    left: 20px;
+}
+.content1::before{
+    content: "";
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background-color: rgb(255, 166, 0,0.6);
+    position:absolute;
+    top: 0px;
+    left: 18px;
+}
+.content1::after{
+    content: "Master Card";
+    font-size: 18px;
+    color: white;
+    position:absolute;
+    top: 5px;
+    right: -150px;
+}
+.content2 img{
+    height: 60px;
+    width: 70px;
+    object-fit: contain;
+    position: relative;
+    top: -12px;
+    left: 325px;
+}
+.content2::before{
+    content: "Valid till";
+    position:absolute;
+    right:40px;
+    bottom:70px;
+}
+.content2::after{
+    content: "05/28";
+    font-size: 20px;
+    position:absolute;
+    right: 42px;
+    bottom:40px;
+}
+.content3{
+    font-size: 15px;
+    position:relative;
+    top:10px;
+    left:30px;
+}
+.content3::before{
+    content: "8050 5040 2030 3020";
+    font-size: 22px;
+    position:absolute;
+    right: px;
+    top:30px;
+}
+.content3::after{
+    content: "Prem Kumar Shahi";
+    font-size: 18px;
+    position:absolute;
+    left: 0px;
+    top:90px;
+}
