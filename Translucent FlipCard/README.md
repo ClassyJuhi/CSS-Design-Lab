@@ -4,7 +4,9 @@ Translucent FlipCard is a beautiful credit card design created using HTML and CS
 
 ## Screenshots
 
-![image](<![image](https://github.com/ClassyJuhi/CSS-Design-Lab/assets/103419567/a9db9c64-bbce-4cff-af2a-0b4839ab0648)>)
+![image](https://github.com/ClassyJuhi/CSS-Design-Lab/assets/103419567/5dcca601-4f5c-40f6-a095-9c756847c907)
+![image](https://github.com/ClassyJuhi/CSS-Design-Lab/assets/103419567/3ab4d0a6-82a3-4423-b263-9e9cff7606f5)
+![image](https://github.com/ClassyJuhi/CSS-Design-Lab/assets/103419567/48ad187a-19e9-44cf-9146-c4dcc4d9e592)
 
 ## Demo
 
