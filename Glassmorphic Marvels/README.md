@@ -3,8 +3,17 @@
 Glassmorphic Marvels is a web project that combines the captivating design trend of glassmorphism with the wonders of nature. It showcases a collection of stunning natural phenomena, accompanied by their names and images, presented in a visually appealing glassmorphic design.
 
 ## Screenshots 
+
 ![image](https://github.com/ClassyJuhi/CSS-Design-Lab/assets/103419567/8aa42672-9ec5-4dca-8789-055e514daf99)
 
+## Demo 
+
+Experience the immersive transparent glassmorphic design: https://codepen.io/Classy_Juhi/pen/BaqGNya
+
+## Technologies Used
+
+- HTML5
+- CSS3
 
 ## Features
 
@@ -15,7 +24,7 @@ Glassmorphic Marvels is a web project that combines the captivating design trend
 
 ## Usage
 
-1. Clone the repository: `git clone https://github.com/your-username/glassmorphic-marvels.git`
+1. Clone the repository: `git clone https://github.com/ClassyJuhi/glassmorphic-marvels.git`
 2. Open the `index.html` file in your preferred web browser.
 3. Browse through the collection of natural phenomena and enjoy the glassmorphic design.
 4. Click on each phenomenon to view its name and image.
@@ -30,6 +39,11 @@ Contributions to enhance the collection of natural phenomena or improve the over
 4. Push to the branch: `git push origin feature-name`.
 5. Open a pull request with a detailed description of your changes.
 
+## Credits
+
+- [color-hex](https://www.color-hex.com/) for hex colors.
+- [Unsplash](https://unsplash.com) for the user photo.
+
 ## License
 
 The Glassmorphic Marvels project is released under the [MIT License](https://opensource.org/licenses/MIT). Feel free to modify and distribute the project while respecting the terms of the license.
@@ -41,7 +55,7 @@ The Glassmorphic Marvels project is released under the [MIT License](https://ope
 
 ## Contact
 
-If you have any questions, suggestions, or feedback, please feel free to contact the project maintainer at [coderjuhisingh@gmail.com].
+If you have any questions, suggestions, or feedback, please feel free to contact the project maintainer at [classyjuhi@gmail.com] or [(https://www.linkedin.com/in/classy-juhi/].
 
 Enjoy exploring the Glassmorphic Marvels!
 
