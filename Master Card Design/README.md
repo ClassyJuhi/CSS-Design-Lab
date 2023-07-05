@@ -2,6 +2,7 @@
 The Master Card Design is a visually appealing and modern credit card front design that combines sleek aesthetics, functionality, and a seamless user experience. This design is ideal for individuals or businesses looking to enhance their brand identity or create an attractive user interface for financial applications or websites.
 
 ## Screenshots
+![image](https://github.com/ClassyJuhi/CSS-Design-Lab/assets/103419567/55644356-7ef4-4855-9410-d0cfb804e074)
 
 
 ## Demo
@@ -38,7 +39,7 @@ Submit a pull request, clearly describing the changes you've made.
 ## Credits
 
 - [color-hex](https://www.color-hex.com/) for hex colors.
-- [Google Fonts](https://fonts.google.com/icons) for icons used in Master card.
+- [Google Fonts](https://fonts.google.com/icons) for fonts used in Master card.
 
 ## License
 
