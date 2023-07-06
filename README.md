@@ -1,9 +1,10 @@
 <h1 align="center">
-# CSS Design Lab 🎨
+🎨 CSS Design Lab 🎨
 </h1>
 
+<p align="center">
 Welcome to CSS Design Lab! This repository is a collection of daily CSS experiments and designs, where I explore the creative possibilities of CSS in Frontend development.
-
+</p>
 ## About ℹ️
 
 In this repository, you'll find a series of daily projects showcasing unique and visually appealing designs created using CSS. Each project represents a new challenge and opportunity for me to push the boundaries of CSS design.
