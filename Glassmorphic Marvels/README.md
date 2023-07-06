@@ -16,8 +16,8 @@ Experience the awe-inspiring transparent glassmorphic design: [![CodePen](https:
 
 ## Technologies Used 💻
 
-- HTML5
-- CSS3
+- [![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)]()
+- [![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)]()
 
 ## Features ✨
 
@@ -44,8 +44,13 @@ Contributions to enhance the collection of natural phenomena or refine the desig
 
 ## Credits 🙏
 
-- [color-hex](https://www.color-hex.com/): A heartfelt thanks for providing the mesmerizing hex colors.
-- [Unsplash](https://unsplash.com): A special acknowledgment to the talented photographers and content creators whose enchanting images grace this project.
+- [![Color Hex](https://img.shields.io/badge/Color%20Hex-FFA500?style=flat&logo=gradient&logoColor=white)](https://www.color-hex.com/):  A special acknowledgment to color-hex for providing the mesmerizing hex colors.
+- [![Unsplash](https://img.shields.io/badge/Unsplash-000000?style=flat&logo=unsplash&logoColor=white)](https://unsplash.com):  A special acknowledgment to the talented photographers and content creators whose enchanting images grace this project.
+
+
+
+
+
 
 ## License 📄
 
