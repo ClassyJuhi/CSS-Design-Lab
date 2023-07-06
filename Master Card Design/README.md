@@ -17,8 +17,10 @@ Check out the live demo of the Master Card Design here: [![CodePen](https://img.
 
 ## Technologies Used 💻
 
-- HTML5
-- CSS3
+
+- [![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)]()
+- [![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)]()
+
 
 ## Features ✨
 
@@ -46,8 +48,9 @@ Contributions are welcome! If you'd like to contribute to the Master Card Design
 
 ## Credits 🙏
 
-- [color-hex](https://www.color-hex.com/): A heartfelt thanks for providing the mesmerizing hex colors.
-- [Google Fonts](https://fonts.google.com/icons): A special acknowledgment to Google Fonts for the Fonts used in Master card.
+- [![Google Fonts](https://img.shields.io/badge/Google%20Fonts-4285F4?style=flat&logo=google%20fonts&logoColor=white)](https://fonts.google.com/icons): A heartfelt thanks to Google Fonts for the icons used in Master card.
+- [![Color Hex](https://img.shields.io/badge/Color%20Hex-000000?style=flat&logo=color-hex&logoColor=white)](https://www.color-hex.com/): A special acknowledgment to color-hex for providing the mesmerizing hex colors.
+
 
 ## License 📄
 
