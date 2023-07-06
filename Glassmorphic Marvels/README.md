@@ -63,7 +63,10 @@ The Glassmorphic Marvels project is released under the [![MIT License](https://i
 
 ## Contact📧
 
-If you have any questions or just want to say hello, feel free to connect with me on [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue.svg?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/classy-juhi/) or [![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:classyjuhi@gmail.com).
+If you have any questions or just want to say hello, feel free to connect with me on
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue.svg?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/classy-juhi/)
+or 
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:classyjuhi@gmail.com).
 
 Enjoy exploring the Glassmorphic Marvels! ✨🌟
 
