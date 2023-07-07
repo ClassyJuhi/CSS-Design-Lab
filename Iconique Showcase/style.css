@@ -1,0 +1,45 @@
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48;
+    transform: scale(5);
+}
+.material-symbols-outlined:hover {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48;
+    font-size: 30px;
+    transform: scale(5);
+}
+body {
+    background-image: radial-gradient(#ffffff,#e5eff2,#b2cfda,#ccdfe6,#99bfce,#7fafc2,#4c8faa,#327e9e,#196f92,#005f86,#005578);
+}
+h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: 2px double underline ;
+    color: #00090d;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+    padding: 0 70px 0 70px;
+}
+.container {
+    background-image: linear-gradient(to left top, #005f86,#005578,#004c6b,#00425d,#003950,#002f43,#002635,#001c28, #00131a,#00090d);
+    width: 60%;
+    height: 150px;
+    line-height: 150px;
+    margin: 150px auto 250px auto;
+    color: #fff1e2;
+    border: 15px groove #00131a ;
+    border-radius: 40px 5px 40px 0/40px 5px 40px 0;
+    box-shadow: 27px 36px 73px #4c8faa;
+}

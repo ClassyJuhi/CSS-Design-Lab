@@ -1,0 +1,51 @@
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 48;
+    transform: scale(10);
+    color: #a487a9;
+    text-shadow: 17px 17px 17px #d6c9d9, -17px -17px 17px  #3d3040;
+  }
+    input[type="checkbox"] { 
+      display: none;
+    }
+
+  body{
+      background-image:linear-gradient(to top, #9a7aa0,#8a6d90,#7b6180,#6b5570,#5c4960,#4d3d50,#3d3040,#2e2430,#1e1820,#0f0c10,#000000) ;
+      background-repeat: no-repeat;
+      overflow: hidden;
+  }
+  h1{
+    color: #e0d7e2;
+    text-align: center;
+    margin-top: 75px;
+  }
+  .container{
+      margin: 200px auto 350px auto;
+      height: 200px;
+      width: 70%;
+      line-height: 200px;
+      background-color: #b8a1bc;
+      border-radius: 10px;
+      box-shadow: -17px -17px 17px #c2afc6 inset, 17px 17px 17px  #ae94b3 inset;
+  }
+  label{
+      padding: 74px;
+  }
+  #star1:checked ~ label .star1{
+    color: #6b5570;
+  }
+  #star2:checked ~ label .star2{
+    color: #6b5570;
+  }
+  #star3:checked ~ label .star3{
+    color: #6b5570;
+  }
+  #star4:checked ~ label .star4{
+    color: #6b5570;
+  }
+  #star5:checked ~ label .star5{
+    color: #6b5570;
+  }
