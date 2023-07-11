@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background : linear-gradient(to top, #ffc0cb, #e983d8, 	#f9b4f6,#ff92a5);
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.mainbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.background::before{
+    content: "";
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    border-radius: 100%;
+    background: linear-gradient(to right ,#f2e5f2,#cc99cc, #b266b2 ,#8c198c);
+    position: absolute;
+    animation-name: before;
+    animation-iteration-count: infinite;
+    animation-duration: 40s;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes before {
+  
+    0% {
+        top: 500px;
+        left: 0;
+    }
+    20%{
+        top: 100px;
+        left:100px;
+    }
+
+    40% {
+        top:500px;
+        left:300px;
+    }
+    60%{
+        top: 0px;
+        left: 600px;
+    }
+    80%{
+        top:500px;
+        left: 800px;
+    }
+    100% {
+        top: 0px;
+        left: 1050px;
+    }
+}
+.material-symbols-outlined{
+    text-align: center;
+}
+.details{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.details div{
+    margin-bottom: 55px;
+
+}
+
+.address, .email, .phone{
+    position:relative;
+    
+}
+.address::before{
+    content: "Sayajigunj,Vadodara";
+    position:absolute;
+    bottom:-18px;
+    left:-50;
+    
+}
+.address::after{
+    content: " Gujarat,India";
+     position:absolute;
+    bottom:-35px;
+    left:0;
+}
+.phone::before{
+    content: " 222852389";
+    position:absolute;
+    bottom:-18px;
+    left:0;
+}
+.phone::after{
+    content: " 129242046";
+    position:absolute;
+    bottom:-35px;
+    left:0;
+}
+.email::before{
+    content: "wetter@outlook.com";
+    position:absolute;
+    bottom:-18px;
+    left:0;
+}
+.email::after{
+    content: "dmath@hotmail.com";
+    position:absolute;
+    bottom:-35px;
+    left:0;
+}
+
+.contact-container{
+    width: 60%;
+    background-color: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(1px);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction:row;
+}
+.details{
+    padding-right: 150px;
+    position: relative;
+}
+.details::after{
+    content: " ";
+    height: 80%;
+    width: 1px;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    top:40px; 
+    right:20px;
+}
+.message{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.message h2{
+    text-align: left;
+    margin:20px auto ;
+}
+.message input[type="text"] , input[type="email"] {
+    width: 100%;
+    height:30px;
+}
+
+form input, textarea{
+    background-color:rgb(0,0,0,0.08);
+    margin:10px;
+    width: 100%;
+    border-radius:5px;
+    border:none;
+    padding-left:10px;
+}
+.message input[type="submit"]{
+    padding: 10px;
+    background-color:rgb(0,0,0,0.8) ;
+    color: white;
+    width: auto;
+}
+input[type="text"], input[type="email"], textarea {
+    box-sizing: border-box;
+}
+textarea{
+    padding: 10px 0 0 10px;
+}
