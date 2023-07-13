@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: 	#eed6d3;
+    color: 	#2a505a;
+}
+
+.background::before{
+    content: "";
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background: linear-gradient(to bottom,#c5dbd0,#bad2e3, #cac5dc );
+    display: inline-block;
+    position: absolute;
+    top: 250px;
+    left: 130px;
+    z-index: -1;
+}
+.background::after{
+    content: "";
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    background: linear-gradient(to bottom,#f6ee9e,  #f1d5d8, #c5dbd0);
+    box-shadow: 5px 5px 5px , -5px -5px 5px;
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    z-index: -2;
+}
+
+nav{
+    padding: 5px 20px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+.top-nav ul li{
+    list-style-type: none;
+    margin: 15px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(214,192,189);
+    box-shadow: 5px 5px 5px , -5px -5px 5px;
+    border-radius: 15px;
+    padding: 10px;
+} 
+input[type="text"]{
+    height: 30px;
+    width: 20%;
+    border: none;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.containt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 20px 20px 20px;
+}
+.text-area{
+    margin: 50px;
+}
+h3, h1, h2 {
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 20px;
+}
+h1{
+    font-size: 45px;
+}
+h2{
+    font-size:30px ;
+}
+input[type="button"]{
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 10px;
+    background: linear-gradient(to left bottom,#928880,#2a505a  );
+}
+.image{
+    height: 400px;
+    width: 400px;
+    border: 1 px solid black;
+    border-radius: 100%;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/006/940/053/original/beautiful-young-female-character-wearing-casual-clothes-flat-cartoon-illustration-free-vector.jpg);
+    background-size: cover;
+    box-shadow: 10px 10px 10px #d6c0bd inset, -10px -10px 10px #efdad7 inset;
+}
+.social-links{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    margin-bottom: 10px;
+}
+.social-links ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
