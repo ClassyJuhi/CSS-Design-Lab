@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: repeating-linear-gradient( to bottom, 	#cf629b,#1b5461,#9eced5, #f0d1b1, #97c881 5px);
+    color: #1b5461;
+    
+}
+.card{
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(217deg, rgba(207,98,155,1), rgba(255,0,0,0) 70.71%),            
+                linear-gradient(127deg, rgba(158,206,213,1), rgba(0,255,0,0) 70.71%),            
+                linear-gradient(336deg, rgba(240,209,177,1), rgba(0,0,255,0) 70.71%);    
+    position:absolute;
+    top: 17vh;
+    left: 34%;
+    backface-visibility: hidden;              /* important*/
+}
+.carddetails{
+    padding: 20px;
+}
+.carddetails .shortimage{
+    height: 160px;
+    width: 160px;
+    background-color: #1b5461;
+    border-radius: 100%;
+}
+.carddetails .shortimage img{
+    border-radius: 100%;
+    margin: 5px;
+}
+
+.sociallinks ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.sociallinks ul li {
+    list-style-type: none;
+    height: 35px;
+    width: 35px;
+    background-color: #1b5461;
+    border-radius: 100%;
+    margin: 5px;
+}
+.sociallinks ul li:hover{
+    background-color: white;
+}
+.sociallinks ul li img{
+    margin: 5px;
+}
+
+
+
+.cardimage{
+    background: linear-gradient(217deg, rgba(207,98,155,.8), rgba(255,0,0,0) 70.71%),            
+                linear-gradient(127deg, rgba(158,206,213,.8), rgba(0,255,0,0) 70.71%),            
+                linear-gradient(336deg, rgba(240,209,177,.8), rgba(0,0,255,0) 70.71%);
+}
+
+.cardimage img{
+    padding: 5px;
+}
+
+/* important */
+
+.cardimage{
+    transform: rotateY(180deg);
+}
+.container{
+    transform-style: preserve-3d;
+    transition: 3s;
+}
+.container:hover{
+    transform: rotateY(180deg);
+}
