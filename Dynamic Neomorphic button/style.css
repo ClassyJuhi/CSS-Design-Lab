@@ -1,0 +1,20 @@
+body{
+    background-color:#f2f2f2;
+}
+input[type="button"]{
+    width: 25%;
+    height: 120px;
+    background-color:#f2f2f2;
+    display:block;
+    margin: 250px auto;
+    border: 1px solid #e5e5e5;
+    border-radius: 80px;
+    color: #003950;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    box-shadow: 17px 17px 17px #e5e5e5 ,-17px -17px 17px #ffffff;
+}
+input[type="button"]:focus{
+    box-shadow:-17px -17px 17px #ffffff inset ,17px 17px 17px #e5e5e5 inset ;
+}
