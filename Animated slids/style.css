@@ -1,0 +1,56 @@
+body{
+    background-color: #f2ebf1;
+}
+.container{
+    height: 500px;
+    width: 600px;
+    margin: 80px auto;
+    position: relative;
+    background-color: #f2ebf1;
+}
+.box{
+    height: 100px;
+    width: 130px;
+    position: absolute;
+    border-radius: 10px;
+    transform: skew(60deg) rotate(10deg);
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.box1{
+    top: 50px;
+    left: 225px;
+    animation-name: box1;
+    background-color:#421c39;
+}
+.box2{
+    bottom: 50px;
+    left: 50px;
+    animation-name: box2;
+    background-color: #ceafc7;
+}
+.box3{
+    bottom: 50px;
+    right: 50px;
+    animation-name: box3;
+    background-color: #9d608f;
+}
+@keyframes box1{
+    0%{top: 50px; left: 225px; }
+    25%{transform: translate( -200px, 300px ) skew(60deg) rotate(25deg);}
+    75%{transform: translate( 200px, 300px ) skew(40deg) rotate(10deg);}
+    100%{top: 50px; left: 225px;}
+}
+@keyframes box2{
+    0%{bottom: 50px; left: 50px;}
+    25%{transform: translate( 400px,0px ) skew(60deg) rotate(25deg);}
+    75%{transform: translate( 200px, -300px ) skew(40deg) rotate(10deg);}
+    100%{ bottom: 50px; left: 50px;}
+}
+@keyframes box3{
+    0%{ bottom: 50px; right: 50px;}
+    25%{transform: translate( -200px, -300px ) skew(60deg) rotate(25deg);}
+    75%{transform: translate( -400px, 0px ) skew(40deg) rotate(10deg);}
+    100%{ bottom: 50px; right: 50px;}
+}
