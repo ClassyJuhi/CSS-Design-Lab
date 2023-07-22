@@ -1,0 +1,82 @@
+body{
+    background-color: #e6d7e3;
+}
+.container {
+    height: 500px;
+    width: 500px;
+    background-color: bisque;
+    margin: 100px auto;
+    position: relative;
+    background-color: #ceafc7;
+    box-shadow: 10px 10px 10px #421c39, -10px -10px 10px #f2ebf1;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    position: absolute;
+    left: 175px;
+    top: 175px;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    z-index: 10;
+   
+}
+
+.box1 {
+    background-color: blue;
+    animation-name: box1;
+}
+
+.box2 {
+    background-color: red;
+    animation-name: box2;
+}
+
+.box3 {
+    background-color: green;
+    animation-name: box3;
+}
+
+.box4 {
+    background-color: orange;
+    animation-name: box4;
+}
+.box5{
+    line-height: 150px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+    z-index: 1;
+    box-shadow: 10px 10px 10px #421c39 inset , -10px -10px 10px #9d608f inset;
+}
+@keyframes box1 {
+    0% { top: 175px; left: 175px;}
+    50% {transform: translate(-175px,-175px) rotate(60deg);  background-color: #853973
+;   box-shadow: 10px 10px 10px#5d2750  , -10px -10px 10px #9d608f ;}
+    100% {top: 175px; left: 175px; border-radius: 75px;}
+  }
+  
+  @keyframes box2 {
+    0% { top: 175px; left: 175px;}
+    50% { transform: translate(175px,-175px)  rotate(60deg); background-color: #853973
+;  box-shadow: 10px 10px 10px#5d2750  , -10px -10px 10px #9d608f ; }
+    100% {top: 175px; left: 175px;border-radius: 75px;}
+  }
+
+  @keyframes box3 {
+    0% { top: 175px; left: 175px; }
+    50% { transform: translate(175px,175px)  rotate(60deg);   background-color: #853973
+;  box-shadow: 10px 10px 10px #5d2750 , -10px -10px 10px #9d608f ;}
+    100% {  top: 175px; left: 175px; border-radius: 75px; }
+}
+  
+  @keyframes box4 {
+    0% {top: 175px; left: 175px;}
+    50% {transform: translate(-175px,175px)  rotate(60deg); background-color: #853973
+;  box-shadow: 10px 10px 10px#5d2750  , -10px -10px 10px #e6d7e3 ; }
+    100% {top: 175px; left: 175px;border-radius: 75px;}
+  }
