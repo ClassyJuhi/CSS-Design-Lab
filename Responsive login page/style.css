@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background-color: #b0ddff;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-container form h2{
+    text-align:left;
+    color: #184161;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+input[type="button"]{
+    background: linear-gradient( to left bottom, #fde5f3,  #dc6bac  );
+}
+input[type="email"],input[type="password"]{
+    padding-left: 10px;   
+    position: relative;
+}
+.underline{
+    position: relative;
+}
+
+input .underline:before{
+    content: ' ';
+    height: 2px;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background-color: chartreuse;
+}
+
+
+
+.twitter, .facebook{
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+div a {
+    text-decoration: none;
+    color: white;
+}
+div img{
+    vertical-align: bottom;
+    padding: 3px;
+}
+.twitter{
+    background: linear-gradient(to right top,   #84b7e0, #235f8e);
+}
+.facebook{
+    background: linear-gradient(to right top,   #49718f , #102e45);
+}
+
