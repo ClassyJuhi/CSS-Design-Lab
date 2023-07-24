@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    height: 670px;
+    width: 1000px;
+    background-color:  #191919;
+    margin: auto;
+    position: relative;
+}
+.scon1{
+    height: 350px;
+    width: 350px;
+    background-image: linear-gradient(to bottom,#ffd27f, 	#e19023, #ff4c4c, #e50000 ) ;
+    border-radius: 250px;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+}
+.scon2{
+    height: 300px;
+    width: 300px;
+    background-image: linear-gradient(to bottom,#4c8faa, 	#327e9e,#198c19, #2bab65) ;
+    border-radius: 250px;
+    position: absolute;
+    bottom: 45px;
+    right: 150px;
+}
+.main{
+    position:absolute;
+    height: 500px;
+    width: 350px;
+    background-color: rgb(255, 255, 255, 0.1);
+    left: 325px;
+    top: 70px;
+    border-radius: 15px;
+    backdrop-filter: blur( 8px );
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+}
+.img1{
+    position: absolute;
+    left:25px;
+    bottom: 370px;
+    height: 70px;
+    width: 300px;
+    background-color: rgba(0,0,0,0.40);
+    backdrop-filter: blur( 1px );
+    border-radius: 12PX;
+}
+.img2{
+    position: absolute;
+    left:25px;
+    bottom: 285px;
+    height: 70px;
+    width: 300px;
+    background-color: rgba(0,0,0,0.40);
+    backdrop-filter: blur( 1px );
+    border-radius: 12PX;
+}
+.img3{
+    position: absolute;
+    left:25px;
+    bottom: 200px;
+    height: 70px;
+    width: 300px;
+    background-color: rgba(0,0,0,0.40);
+    backdrop-filter: blur( 1px );
+    border-radius: 12PX;
+}
+.img4{
+    position: absolute;
+    left:25px;
+    bottom: 115px;
+    height: 70px;
+    width: 300px;
+    background-color: rgba(0,0,0,0.40);
+    backdrop-filter: blur( 1px );
+    border-radius: 12PX;
+}
+.img5{
+    position: absolute;
+    left:25px;
+    bottom: 30px;
+    height: 70px;
+    width: 300px;
+    background-color: rgba(0,0,0,0.40);
+    backdrop-filter: blur( 1px );
+    border-radius: 12PX;
+}
+img{
+    border-radius: 15px;
+    float: left;
+    padding: 10px;
+}
+p{
+    font-size: 14px;
+    line-height: 1px;
+}
+h4{
+    padding: 15px 0 10px 0;
+}
