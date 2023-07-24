@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: repeating-linear-gradient(to top, #4b5f6e, #374e5e, #314654,#2c3e4b, #263641);
+    color: 	#cccccc;
+}
+
+footer{
+    width: 100%;
+    background:  #06465c;
+    position: fixed;
+    bottom: 0;
+}
+footer .header{
+    height: 60px;
+    border-bottom: 2px solid 	#e8c02e;
+    padding: 5px 100px 5px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ .header .social ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header .social ul li{
+    list-style-type: none;
+    height: 30px;
+    width: 30px;
+    margin:10px;
+    border-radius: 100%;
+    background: 	#cccccc;
+    padding: 5px;
+    
+}
+.header .social ul li:hover{
+    height: 35px;
+    width: 35px;
+    padding: 8px;
+    margin: 5px;
+    background-color: #dbdbdb;
+}
+
+.mainBox{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.mainBox ul h3, form h3{
+    position: relative;
+    margin-bottom: 10px;
+}
+.mainBox ul h3::after{
+    content: "";
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.mainBox form h3::after{
+    content: "";
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.mainBox input[type='email']{
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    background-color: #06465c;
+    color:#cccccc;
+    padding-left: 20px;
+    border: 2px solid #cccccc ;
+    border-radius: 2px;
+    outline: none;
+}
+.mainBox input[type='button']{
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    background-color: #cccccc;
+    color:#06465c;
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+.mainbox ul {
+    padding: 20px;
+}
+
+.mainBox ul li{
+    list-style-type: none;
+    margin-top: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.bottom{
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.firstflex, .secondflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.firstflex p,.secondflex p{
+    margin: 0 15px;
+}
+.bottom{
+    height: 40px;
+    background-color: #053e52;
+}
