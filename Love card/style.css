@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#ff7f7f ;
+}
+.container{
+    height: 450px;
+    width: 450px;
+    margin: 130px auto;
+    position: relative;
+    background-image:linear-gradient(to right bottom, #ff7f7f, #ff9999) ;
+    box-shadow: 15px 15px 20px #ff6666,-15px -15px 20px #ff9999 ;
+}
+.box{
+    background-color: #e50000;
+    position: absolute;
+}
+.box1{
+    height:150px ;
+    width: 150px;
+    top: 175px;
+    left: 150px;
+    transform: rotate(45deg);
+    border-radius:100px 25px 10px 25px ;
+}
+.box2{
+    height:125px ;
+    width: 125px;
+    top: 152px;
+    left: 214px;
+    border-radius:150px;
+    transform: rotate(45deg);
+}
+.box3{
+    height:125px ;
+    width: 125px;
+    top: 152px;
+    left: 112px;
+    border-radius:100px;
+    transform: rotate(45deg);
+}
+.main1{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    box-shadow: 15px 15px 20px #ff6666,-15px -15px 20px #ff9999 
+}
+.main2{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    box-shadow: 15px 15px 20px #ff6666,-15px -15px 20px #ff9999 
+}
+.profile1{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    box-shadow: inset 15px 15px 15px #ff6666, inset -15px -15px 15px #ff9999;
+    position: absolute;
+    top: 50px;
+    left: 75px;
+}
+.eye1{
+    height: 25px;
+    width: 15px ;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+.eye2{
+    height: 25px;
+    width: 15px ;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+.circle1{
+    height:50px;
+    width:50px;
+    border-top:5px solid black;
+    position:absolute;
+    left:27px;
+    top:65px;
+}
+.circle2{
+    height:80px;
+    width:80px;
+    border-bottom:5px solid black;
+    border-radius:150px;
+    position:absolute;
+    left:11px;
+}
+p{
+    text-align: center;
+    margin-top: 140px;
+    font-size:20px;
+    font-weight:500;
+    text-shadow:1px 1px 1px ;
+}
+.para1{
+    font-size:32px;
+    font-weight:800;
+    text-shadow:2px 2px 2px ;
+    position: absolute;
+    bottom: 20px;
+    left: 190px;
+    letter-spacing: 2px;
+}
