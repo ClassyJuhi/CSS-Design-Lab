@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: #89b1d4;
+}
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .dots span{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color:#1c3449;
+    border-radius: 100%;
+    transform: rotate(calc(var(--a) * (360deg/13))) translateY(35px);
+    animation:  animate 1.5s linear infinite;
+    animation-delay:calc(var(--a) * 0.1s);
+    opacity: 1;
+}
+@keyframes animate {
+0%{
+    opacity: 1;
+}
+100%{
+    opacity: 0;
+}
+}
