@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,200;1,200&family=Rancho&family=Rubik+Pixels&family=Sedgwick+Ave+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    max-height: 100vh;
+    background: #cfd5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #243337;
+}
+h1{
+    margin: 50px;
+    text-decoration: underline;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+.main-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    background-color: #cfd5ff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 15px 15px 15px #a5aacc inset , -15px -15px 15px #e2e5ff inset;
+}
+.subcontainer{
+    padding: 25px;
+}
+.subcontainer h2{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.seekbar{
+    height: 15px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: 		#c7bbc9;
+    position: relative;
+}
+.subcontainer .HTML::before{
+    content: "";
+    height: 15px;
+    width: 90%;
+    background-color: #7e6999;
+    border-radius: 15px;
+    position: absolute;
+    box-shadow: 5px 5px 5px #64547a inset , -5px -5px 5px #9787ad inset;
+    animation: progress1 1s ease-in-out;
+}
+@keyframes progress1{
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        width: 90%;
+        opacity: 1;
+    }
+}
+.subcontainer .HTML::after{
+    content: "90%";
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #7e6999;
+    color: white;
+    position: absolute;
+    top: -13px;
+    left: 88%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 5px 5px 5px #715e89 inset , -5px -5px 5px #8a78a3 inset;
+    animation: tooltip1 1s ease-in-out;
+}
+@keyframes tooltip1{
+    0%{
+        left : 0;
+    }
+    100%{
+        left: 88%;
+    }
+}
+.subcontainer .CSS::before{
+    content: "";
+    height: 15px;
+    width: 70%;
+    background-color: #7e6999;
+    border-radius: 15px;
+    position: absolute;
+    box-shadow: 5px 5px 5px #64547a inset , -5px -5px 5px #9787ad inset;
+    animation: progress2 1s ease-in-out;
+}
+@keyframes progress2{
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        width: 70%;
+        opacity: 1;
+    }
+}
+.subcontainer .CSS::after{
+    content: "70%";
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #7e6999;
+    color: white;
+    position: absolute;
+    top: -13px;
+    left: 68%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 5px 5px 5px #715e89 inset , -5px -5px 5px #8a78a3 inset;
+    animation: tooltip2 1s ease-in-out;
+}
+@keyframes tooltip2{
+    0%{
+        left : 0;
+    }
+    100%{
+        left: 68%;
+    }
+}
+.subcontainer .JS::before{
+    content: "";
+    height: 15px;
+    width: 50%;
+    background-color: #7e6999;
+    border-radius: 15px;
+    position: absolute;
+    box-shadow: 5px 5px 5px #64547a inset , -5px -5px 5px #9787ad inset;
+    animation: progress3 1s ease-in-out ;
+}
+@keyframes progress3{
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        width: 50%;
+        opacity: 1;
+    }
+}
+.subcontainer .JS::after{
+    content: "50%";
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #7e6999;
+    color: white;
+    position: absolute;
+    top: -13px;
+    left: 48%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 5px 5px 5px #715e89 inset , -5px -5px 5px #8a78a3 inset;
+    animation: tooltip3 1s ease-in-out;
+}
+@keyframes tooltip3{
+    0%{
+        left : 0;
+    }
+    100%{
+        left: 48%;
+    }
+}
+.subcontainer .NodeJS::before{
+    content: "";
+    height: 15px;
+    width: 30%;
+    background-color: #7e6999;
+    border-radius: 15px;
+    position: absolute;
+    box-shadow: 5px 5px 5px #64547a inset , -5px -5px 5px #9787ad inset;
+    animation: progress4 1s ease-in-out;
+}
+@keyframes progress4{
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        width: 30%;
+        opacity: 1;
+    }
+}
+.subcontainer .NodeJS::after{
+    content: "30%";
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #7e6999;
+    color: white;
+    position: absolute;
+    top: -13px;
+    left: 28%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 5px 5px 5px #715e89 inset , -5px -5px 5px #8a78a3 inset;
+    animation: tooltip4 1s ease-in-out forwards;
+}
+@keyframes tooltip4{
+    0%{
+        left : 0;
+    }
+    100%{
+        left: 28%;
+    }
+}
+
