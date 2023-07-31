@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background:#edd0ff;
+    color: 	#501f6e;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+    border-radius: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.container form h2, input, textarea{
+    margin-bottom: 20px;
+}
+.container form input {
+    height: 40px;
+    width: 300px;
+    border: none;
+    outline: none;
+    background-color: #e1b2ff;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.container form textarea{
+    height: 100px;
+    border: none;
+    outline: none;
+    background-color: #e1b2ff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container form input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
+    background-color: #f6e7ff;
+    color: #501f6e;
+}
+.container form input[type="submit"]{
+    background-color: #8000aa;
+    color: #e1b2ff;
+    font-weight: 700;
+}
+.container form input[type="submit"]:hover{
+    background-color: #501f6e;
+    color: #e1b2ff;
+    font-weight: 600;
+}
