@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,200;1,200&family=Rancho&family=Rubik+Pixels&family=Sedgwick+Ave+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #d8e5d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="checkbox"]{
+    visibility: hidden;
+}
+.maincontainer label{
+    background-color:#f0fff0;
+    box-shadow: 10px 10px 10px #c0ccc0 inset, -10px -10px 10px#f3fff3 inset;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+.maincontainer label:hover{
+    background-color:#50665f;
+    box-shadow: 10px 10px 10px #3a534b inset, -10px -10px 10px #667973 inset;
+    color: #f0fff0;
+}
+.alertbox{
+    height: 0;
+    width: 0;
+    background-color:#f0fff0;
+    box-shadow: 10px 10px 10px #c0ccc0 inset, -10px -10px 10px#f3fff3 inset;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+}
+.alertbox .icon{
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    border-radius: 100%;
+    margin: 25px 0  15px 0;
+    position: relative;
+}
+.alertbox .icon::before{
+    content: "!";
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 900;
+    position: absolute;
+    left: 33%;
+}
+.alertbox h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.alertbox h3{
+    margin-bottom: 20px;
+}
+.maincontainer .alertbox .button {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.maincontainer .alertbox .button a{
+    padding: 15px 20px;
+    background-color: #c0ccc0;
+    color: #3a534b;
+    box-shadow: 10px 10px 10px  #a8b2a8 inset, -10px -10px 10px#d8e5d8 inset;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+}
+.maincontainer .alertbox .button a:hover{
+    background-color:#50665f;
+    box-shadow: 10px 10px 10px #3a534b inset, -10px -10px 10px #667973 inset;
+    color: #f0fff0;
+}
+
+input[type="checkbox"]:checked ~ .alertbox{
+    width: 350px;
+    height: 350px;
+}
+
+input[type="checkbox"]:checked ~ label{
+    visibility: hidden;
+}
