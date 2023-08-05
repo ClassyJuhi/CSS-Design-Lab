@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital@0;1&family=Indie+Flower&family=Lobster&family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,200;1,200&family=Rancho&family=Rubik+Pixels&family=Sedgwick+Ave+Display&family=Tilt+Prism&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+    background: linear-gradient(217deg, rgba(45,64,89,.95), rgba(45,64,89,0.1) 80.71%),            
+                linear-gradient(127deg, rgba(27,38,53,.95), rgba(27,38,53,0.1) 80.71%),            
+                linear-gradient(336deg, rgba(109,123,141,.95), rgba(109,123,141,0.1) 80.71%);
+                
+}
+.card{
+    width: 450px;
+    height: 250px;
+    border-radius: 2px;
+    background: repeating-linear-gradient(to right bottom, #cea571, #3d3121  ,#cea571, #dcc09b 0.2px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 25vh;
+    left: 34%;
+    backface-visibility: hidden;  
+}
+.front .shape{
+    height: 50px;
+    width: 50px;
+    border: 8px solid black;
+    margin: 5px;
+}
+.front .circle{
+    border-radius: 50%;
+}
+.front .triangle{
+    height: 0;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 60px solid black;
+    position: relative;
+}
+.front .triangle::before{
+    content: " ";
+    height: 0;
+    width: 0;
+    display: inline-block;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 45px solid #cea571;
+  
+    position: absolute;
+    right: -34px;
+    top: 10px;
+}
+.back .home{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    color: #a4845a;
+    margin-right: 20px;
+}
+.back .home span{
+    font-size: 40px;
+}
+.back p{
+    font-size: 30px;
+}
+.back{
+    transform: rotateY(180deg);
+}
+.container{
+    transform-style: preserve-3d;
+    transition: 3s;
+}
+.container:hover{
+    transform: rotateY(180deg);
+}
