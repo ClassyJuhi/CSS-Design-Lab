@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.maincontainer{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/009/880/565/non_2x/spring-time-sunny-day-summer-landscape-in-village-with-green-field-cloud-and-blue-sky-background-rural-countryside-with-mountain-grassland-sunlight-in-morning-nature-scenery-cartoon-background-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"] ~ label{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: white;
+}
+input[type="checkbox"]:checked ~ .maincontainer{
+    background-image: url(https://t3.ftcdn.net/jpg/02/28/37/48/360_F_228374822_swvpReqovxC0uM7awKLmwqEO8lyC0nki.jpg);
+}
