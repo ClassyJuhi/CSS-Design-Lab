@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+ input[type="button"]{
+    height: 100px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-image-source: repeating-linear-gradient(to right bottom,	#ff71ce,#01cdfe,#05ffa1,#b967ff	,#fffb96);
+    border-radius: 25px;
+}
+input[type="button"]:hover{
+    animation: move 1s linear infinite;
+}
+@keyframes move {
+    0%{
+        border-image-source: repeating-linear-gradient(to right bottom,	#ff71ce,#01cdfe,#05ffa1,#b967ff	,#fffb96);
+    }
+    33%{
+        border-image-source: repeating-linear-gradient(to right bottom,#d11141	,#00b159,#00aedb	,#f37735	,#ffc425);
+    }
+    66%{
+        border-image-source: repeating-linear-gradient(to right bottom,	#ffd4e5,#d4ffea,#eecbff,#feffa3,#dbdcff);
+    }
+    100%{
+        border-image-source: repeating-linear-gradient(to right bottom,	#b2d8d8	,#66b2b2	,#008080,#006666,#004c4c);
+    }
+}
