@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(to right bottom,#00076f, #9f45b0, #ffe4f2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    border-radius: 10px;
+    background: linear-gradient(to right bottom,black,#191919,#222222,#333333);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+}
+.text h1{
+    padding: 50px;
+    background:linear-gradient(#f2a9a9	,#ef94ca	,#f7838d	,#ff5588,#f2efeb);
+    -webkit-background-clip: text;
+    animation: color 2s ease-in-out infinite;
+}
+.text h2{
+    padding: 50px;
+    font-size: 150px;
+    background-image: url(https://cdn.wallpapersafari.com/17/17/5f7pHi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+}
+@keyframes color{
+    0%{
+        background:linear-gradient(#f2a9a9	,#ef94ca	,#f7838d	,#ff5588,#f2efeb);
+        -webkit-background-clip: text;
+    }
+    50%{
+        background:linear-gradient(to right bottom,#00076f, #9f45b0, #ffe4f2);
+        -webkit-background-clip: text;
+    }
+    100%{
+        background:linear-gradient(#f2a9a9	,#ef94ca	,#f7838d	,#ff5588,#f2efeb);
+        -webkit-background-clip: text;
+    }
+}
