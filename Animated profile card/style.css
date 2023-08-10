@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(217deg, rgba(45,64,89,.95), rgba(45,64,89,0.1) 80.71%),            
+                linear-gradient(127deg, rgba(27,38,53,.95), rgba(27,38,53,0.1) 80.71%),            
+                linear-gradient(336deg, rgba(109,123,141,.95), rgba(109,123,141,0.1) 80.71%);
+    
+}
+.maincontainer{
+    position: relative;
+}
+
+.maincontainer .image img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    object-position: -310px;
+}
+
+.maincontainer .image {
+    width: 350px;
+    height: 400px;
+    border: 10px solid whitesmoke;
+    border-radius: 10px;
+    position: relative;
+}
+
+.maincontainer .image:hover{
+    transform: translateY(15px);
+}
+
+.maincontainer .image::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    display: inline-block;
+    position: absolute;
+    bottom: -25px;
+    left: 45%;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox] ~ label{
+    height: 50px;
+    width: 370px;
+    background: linear-gradient(to right bottom,#fffff2,#f9f9f9,#fffff4,#fbf7f5,#f9f1f1);
+    box-shadow: 5px 5px 5px #f9f9f9 inset, -5px -5px 5px #f9f9f9 inset;
+    border-radius: 25px;
+    margin-top: 40px;
+    font-size: x-large;
+    text-align: center;
+    line-height: 50px;
+}
+input[type=checkbox] ~ label::before{
+    content: "Share";
+    font-weight: 600;
+}
+input[type=checkbox] ~ label::after{
+    content: "Cancel";
+    font-weight: 600;
+    display: none;
+}
+.about {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    bottom: 170px;
+    text-align: center;
+    background-color: rgb(128, 128, 128, 0.5);
+    border-radius: 15px;
+}
+.about ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.about ul li {
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255 , 0.5);
+    border-radius: 50%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=checkbox]:checked ~ .about{
+    height: 120px;
+    width: 250px;
+    padding: 10px;
+}
+input[type=checkbox]:checked ~ label::before{
+    display: none;
+}
+input[type=checkbox]:checked ~ label::after{
+    display: block;
+}
+
