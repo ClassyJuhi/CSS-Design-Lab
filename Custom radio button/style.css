@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom,#011f4b,#03396c	,#005b96	,#6497b1);
+    font-size: 20px;
+    font-weight: 600;
+}
+.container{
+    background-color:#6497b1;
+    padding: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 15px 15px 15px #5a879f  inset, -15px -15px 15px #73a1b8  inset;
+}
+.container label{
+    color: #011f4b;
+    box-shadow: 5px 5px 5px #5a879f  inset, -5px -5px 5px #73a1b8  inset;
+    margin: 15px;
+    padding: 20px 30px;
+    padding-left: 55px;
+    border-radius: 5px;
+    position: relative;
+}
+label::before{
+    content: "";
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #6497b1;
+    box-shadow: 5px 5px 5px #5a879f  inset, -5px -5px 5px #73a1b8  inset;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+label::after{
+    content: "";
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: 	#011f4b;
+    box-shadow: 5px 5px 5px #001b43 inset, -5px -5px 5px #1a355d inset;
+    display: none;
+    position: absolute;
+    top: 23px;
+    left: 23px;
+}
+input[type="radio"]{
+    appearance: none;
+}
+#student:checked ~ .student{
+    background-color: #03396c;
+    color: #9aafc4;
+    box-shadow: 5px 5px 5px #022d56 inset, -5px -5px 5px #1c4c7a inset;
+}
+#teacher:checked ~ .teacher{
+    background-color: #03396c;
+    color: #9aafc4;
+    box-shadow: 5px 5px 5px #022d56 inset, -5px -5px 5px #1c4c7a inset;
+}
+
+
+#student:checked ~ .student::after{
+    display: block;
+}
+#teacher:checked ~ .teacher::after{
+    display: block;
+}
+
+
+#student:checked ~ .student::before{
+    height: 30px;
+    width: 30px;
+    top: 15px;
+    left: 15px;
+}
+#teacher:checked ~ .teacher::before{
+    height: 30px;
+    width: 30px;
+    top: 15px;
+    left: 15px;
+}
