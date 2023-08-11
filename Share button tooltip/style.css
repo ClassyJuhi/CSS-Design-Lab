@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: repeating-linear-gradient(#d2d4dc, #afafaf, #f8f8fa, #e5e6eb, #c0c2ce 5px);
+}
+
+.container {
+    height: 170px;
+    width: 250px;
+    position: relative;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    width: 120px;
+    background: linear-gradient(to left bottom, #d2d4dc, #afafaf, #f8f8fa, #e5e6eb, #c0c2ce);
+    box-shadow: 5px 5px 5px #afafaf, -5px -5px 5px #e5e6eb;
+    padding: 15px 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+label::before {
+    content: "share";
+    font-size: 26px;
+    font-weight: 600;
+}
+
+label::after {
+    content: "cancel";
+    font-size: 26px;
+    font-weight: 600;
+    display: none;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+.tooltip ul {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: linear-gradient(to right bottom, #d2d4dc, #afafaf, #f8f8fa, #e5e6eb, #c0c2ce);
+    box-shadow: 5px 5px 5px #afafaf, -5px -5px 5px #e5e6eb;
+    position: relative;
+}
+
+.tooltip ul::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(to right bottom, #d2d4dc, #afafaf, #f8f8fa, #e5e6eb, #c0c2ce);
+    box-shadow: 5px 5px 5px #afafaf, -5px -5px 5px #e5e6eb;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -20px;
+    left: 20%;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.tooltip ul li {
+    height: 40px;
+    width: 40px;
+    background-color: #c0c2ce;
+    border-radius: 50%;
+    list-style-type: none;
+    margin: 5px;
+    box-shadow: 5px 5px 5px #afafaf, -5px -5px 5px #e5e6eb;
+}
+
+.tooltip ul li:hover {
+    box-shadow: 5px 5px 5px #afafaf inset, -5px -5px 5px #d2d4dc inset;
+    border: 1px solid #d2d4dc;
+}
+
+.tooltip ul li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip ul li a img {
+    height: 30px;
+    width: 30px;
+}
+
+input[type="checkbox"]:checked~.tooltip {
+    display: block;
+}
+
+input[type="checkbox"]:checked~label {
+    box-shadow: 5px 5px 5px #afafaf inset, -5px -5px 5px #d2d4dc inset;
+}
+
+input[type="checkbox"]:checked~label::after {
+    display: block;
+}
+
+input[type="checkbox"]:checked~label::before {
+    display: none;
+}
