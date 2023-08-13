@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, #03396c, #005b96, #6497b1, #b3cde0);
+}
+
+.maincontainer {
+    position: relative;
+    left: 17%;
+    top: -320px;
+}
+
+.imagebox {
+    width: 500px;
+    position: relative;
+}
+
+.profile {
+    height: 450px;
+    width: 350px;
+    border: 10px solid whitesmoke;
+    border-image: linear-gradient(#6497b1, #b3cde0, #005b96);
+    border-image-slice: 1;
+    border-radius: 25px;
+    position: absolute;
+    top: 50px;
+}
+
+.profile1 {
+    left: 0;
+}
+
+.profile2 {
+    left: 25%;
+}
+
+.profile3 {
+    left: 50%;
+}
+
+.profile4 {
+    left: 75%;
+}
+
+.profile5 {
+    left: 100%;
+}
+
+.profile::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    background: linear-gradient(#6497b1, #005b96);
+    transform: rotate(45deg);
+    display: inline-block;
+    position: absolute;
+    bottom: -25px;
+    left: 40%;
+    z-index: -1;
+}
+
+.profile img {
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 2px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 570px;
+    left: 24%;
+}
+
+label img {
+    height: 50px;
+    width: 50px;
+    margin: 0 37px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    display: none;
+    width: 300px;
+    background-color: rgb(100, 151, 177, 0.75);
+    border-radius: 10px;
+    height: 100px;
+    position: absolute;
+    top: 350px;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.about h2 {
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#image1:checked~.imagebox .profile1 .about {
+    display: flex;
+}
+
+#image2:checked~.imagebox .profile2 .about {
+    display: flex;
+}
+
+#image3:checked~.imagebox .profile3 .about {
+    display: flex;
+}
+
+#image4:checked~.imagebox .profile4 .about {
+    display: flex;
+}
+
+#image5:checked~.imagebox .profile5 .about {
+    display: flex;
+}
+
+
+#image1:checked~.imagebox .profile1 {
+    animation: move1 1s ease-in-out forwards;
+}
+
+@keyframes move1 {
+    0% {
+        left: 0%;
+    }
+
+    50% {
+        left: -50%;
+        z-index: 1;
+    }
+
+    100% {
+        left: 0%;
+        z-index: 1;
+    }
+}
+
+#image2:checked~.imagebox .profile2 {
+    animation: move2 1s ease-in-out forwards;
+}
+
+@keyframes move2 {
+    0% {
+        left: 25%;
+    }
+
+    50% {
+        left: -25%;
+        z-index: 1;
+    }
+
+    100% {
+        left: 25%;
+        z-index: 1;
+    }
+}
+
+#image3:checked~.imagebox .profile3 {
+    animation: move3 1s ease-in-out forwards;
+}
+
+@keyframes move3 {
+    0% {
+        left: 50;
+    }
+
+    50% {
+        left: 0%;
+        z-index: 1;
+    }
+
+    100% {
+        left: 50;
+        z-index: 1;
+    }
+}
+
+#image4:checked~.imagebox .profile4 {
+    animation: move4 1s ease-in-out forwards;
+}
+
+@keyframes move4 {
+    0% {
+        left: 75%;
+    }
+
+    50% {
+        left: 25%;
+        z-index: 1;
+    }
+
+    100% {
+        left: 75%;
+        z-index: 1;
+    }
+}
+
+#image5:checked~.imagebox .profile5 {
+    animation: move5 1s ease-in-out forwards;
+}
+
+@keyframes move5 {
+    0% {
+        left: 100%;
+    }
+
+    50% {
+        left: 100%;
+        z-index: 1;
+    }
+
+    100% {
+        left: 100%;
+        z-index: 1;
+    }
+}
