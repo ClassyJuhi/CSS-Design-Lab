@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/004/519/281/non_2x/young-asian-business-woman-beautiful-charming-smiling-sitting-working-in-office-looking-at-camera-free-photo.jpg);
+    background-size: cover;
+  }
+  
+  .popup {
+    background: linear-gradient(to right bottom, #343d46, #4f5b66, #65737e, #a7adba, #c0c5ce);
+    width: 270px;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    animation: popup 0.8s ease forwards;
+  }
+  
+  @keyframes popup {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    40% {
+      transform: translateX(-5%);
+    }
+  
+    80% {
+      transform: translateX(0%);
+    }
+  
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+  
+  .popup p {
+    font-weight: 600;
+  }
+  
+  .popup input[type="button"] {
+    background: linear-gradient(to right bottom, #999999, #777777, #555555, #333333, #111111);
+    border: none;
+    outline: none;
+    padding: 10px 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    color: #ffc300;
+  }
+  
+  input[type="checkbox"]~label {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    z-index: 2;
+    animation: label 0.8s ease forwards;
+  }
+  
+  @keyframes label {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    40% {
+      transform: translateX(-5%);
+    }
+  
+    80% {
+      transform: translateX(0%);
+    }
+  
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked~.popup {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked~label {
+    display: none;
+  }
