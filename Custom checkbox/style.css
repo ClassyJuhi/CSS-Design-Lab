@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital@0;1&family=Indie+Flower&family=Lobster&family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,200;1,200&family=Rancho&family=Rubik+Pixels&family=Sedgwick+Ave+Display&family=Tilt+Prism&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: 	#8b9dc3;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Crimson Text', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 300px;
+    height: 120px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: 	#3b5998;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+label {
+    height: 50px;
+    width: 120px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: pink;
+    position: relative;
+}
+
+label::before{
+    content: " ";
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+    background-color: 	#3b5998;
+    display: inline-block;
+    position: absolute;
+    top: 1.5px;
+    left: 3px;
+}
+
+input[type="checkbox"]:checked ~ label::before{
+    animation: button1 0.25s linear forwards;
+}
+
+@keyframes button1{
+    0%{
+        left: 2px;
+    }
+    100%{
+        left: 71px;
+    }
+}
+
+input[type="checkbox"]:not(checked) ~ label::before{
+    animation: button2 0.25s linear forwards;
+}
+
+@keyframes button2{
+    0%{
+        left: 71px;
+    }
+    100%{
+        left: 2px;
+        background-color: #8b9dc3;
+    }
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ label{
+    background-color: #dfe3ee;
+}
+
+input[type="checkbox"]:not(checked) ~ label{
+    background-color: #f7f7f7;
+}
+
+input[type="checkbox"]:checked ~ .enabled {
+    display: block;
+    color: #dfe3ee;
+}
+
+input[type="checkbox"]:not(checked) ~ .enabled{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .disabled {
+    display: none;
+}
+
+input[type="checkbox"]:not(checked) ~ .disabled{
+    display: block;
+    color: #f7f7f7;
+}
