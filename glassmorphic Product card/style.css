@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital@0;1&family=Indie+Flower&family=Lobster&family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,200;1,200&family=Rancho&family=Rubik+Pixels&family=Sedgwick+Ave+Display&family=Tilt+Prism&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: repeating-linear-gradient(to right bottom, #daf8e3,#97ebdb,#00c2c7,#0086ad,#005582);
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+}
+.maincontainer{
+    width: 550px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(0,0,0, 0.15);
+    backdrop-filter: blur 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 10px 10px 10px rgb(0,0,0, 0.05), -10px -10px 10px rgb(0,0,0, 0.05);
+}
+.container{
+    height: 280px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    font-family: 'Lato', sans-serif;
+}
+p{
+    width: 250px;
+    text-align: center;
+}
+.image{
+    width: 250px;
+    height: 300px;
+}
+.image img{
+   width: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+input[type="button"]{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(0,0,0, 0.3);
+    color: white;
+    font-weight: 600;
+}
+input[type="button"]:hover{
+    background-color: rgb(0,0,0, 0.5);
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 48;
+    transform: scale(2);
+    color: rgb(0,0,0, 0.25);
+    margin: 0 3px;
+  }
+input[type="checkbox"]{
+    display: none;
+}
+    
+#star1:checked ~ .rating label.star1 span{
+    color: 	rgb(0,0,0, 0.6);
+}
+
+
+#star2:checked ~ .rating label.star1 span {
+    color: 	rgb(0,0,0, 0.6);
+}
+#star2:checked ~ .rating label.star2 span{
+    color: 	rgb(0,0,0, 0.6);
+}
+
+
+#star3:checked ~ .rating label.star1 span{
+    color: 	rgb(0,0,0, 0.6);
+}
+#star3:checked ~ .rating label.star2 span{
+    color: 	rgb(0,0,0, 0.6);
+}
+#star3:checked ~ .rating label.star3 span{
+    color: 	rgb(0,0,0, 0.6);
+}
+
+
+#star4:checked ~ .rating label.star1 span{
+    color: 	rgb(0,0,0, 0.6);
+}
+#star4:checked ~ .rating label.star2 span{
+    color: 	rgb(0,0,0, 0.6);
+}
+#star4:checked ~ .rating label.star3 span{
+    color: 	rgb(0,0,0, 0.6);
+}
+#star4:checked ~ .rating label.star4 span{
+    color: 	rgb(0,0,0, 0.6);
+}
+
+
+#star5:checked ~ .rating label.star span{
+    color: 	rgb(0,0,0, 0.6);
+}
