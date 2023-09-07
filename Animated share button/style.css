@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    height: 75px;
+    width: 280px;
+    padding: 25px 100px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: gray;
+    font-size: 25px;
+    font-weight: 800;
+   
+}
+.social{
+    display: none;
+  
+}
+.social ul {
+    height: 75px;
+    width: 280px;
+    border-radius: 25px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.social ul li{
+    margin: 10px;
+    list-style-type: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .social{
+    display: flex;
+    transition: all 0.4s ease-in-out;
+}
+input[type="checkbox"]:checked ~ .share{
+    display: none;
+    transition: all 0.4s linear;
+}
