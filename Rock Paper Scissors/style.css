@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#000000,#191919,#323232);
+}
+button{
+    background: radial-gradient(#4c4c4c, #323232,#191919, #000000);
+    color: gold;
+}
+a{
+    color: gold;
+    text-decoration: none;
+    font-size: 20px;
+}
+#top{
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#actionButtons{
+    display: flex;
+    justify-content: center;
+}
+#actionButtons button {
+    height: 150px;
+    width: 150px;
+    padding: 12px 20px 20px 12px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #eccca2;
+    margin: 10px;
+}
+#actionButtons button img{
+    max-width: 120px;
+    height: auto;
+}
+#rules{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #eccca2;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+#reset{
+    width: 200px;
+    max-height: 100px;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+#reset > img{
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #eccca2;
+}
+#mainContainer{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#liveShow{
+    height: 300px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#scoreBoard{
+    height: 300px;
+    width: 400px;
+    border: 1px solid #eccca2;
+}
+#liveShow > img{
+    width: 270px;
+    height: auto;
+}
+#liveShow > img:nth-child(1){
+    transform: rotate(90deg);
+}
+#liveShow > img:nth-child(2){
+    transform: rotate(270deg);
+}
+
+#left{
+    animation: shakeLeft 5s linear infinite;
+    animation-play-state: paused;
+}
+@keyframes shakeLeft{
+    0%{
+        transform: rotate(90deg);
+    }
+    2%{
+        transform: rotate(60deg);
+    }
+    50%{
+        transform: rotate(120deg);
+    }
+    100%{
+        transform: rotate(60deg);
+    }
+}
+#right{
+    animation: shakeRight 5s linear infinite;
+    animation-play-state: paused;
+}
+@keyframes shakeRight{
+    0%{
+        transform: rotate(270deg);
+    }
+    2%{
+        transform: rotate(300deg);
+    }
+    50%{
+        transform: rotate(240deg);
+    }
+    100%{
+        transform: rotate(300deg);
+    }
+}
+
+@media (max-width:500px) {
+    #top {
+        padding: 0;
+    }
+    #actionButtons button{
+        height: 90px;
+        width: 90px;
+        padding: none;
+        padding: 3px 10px 10px 3px;
+    }
+    #actionButtons button img{
+        width: 80px;
+        height: auto;
+    }
+}
