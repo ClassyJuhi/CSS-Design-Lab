@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://t3.ftcdn.net/jpg/02/97/20/90/360_F_297209036_MNHVMIAzWTzIysYMcfZMnT2uaihTtjT6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+nav{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo div{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    display: inline-block;
+}
+nav .logo .logo2{
+    color: red;
+    transform: translateX(-3px);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul li{
+    margin: 0 10px;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+nav .buttons input[type="button"]{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px inset , -1px -1px 5px inset ;
+}
+.mainitems{
+    width: 40%;
+    margin-left: 40px;
+    margin-top: 25vh;
+    
+}
+.mainitems h1{
+    font-size: 45px;
+    line-height: 50px;
+}
+.mainitems p{
+    margin-top: 20px;
+}
+.mainitems input[type="submit"]{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px inset , -1px -1px 5px inset ;
+}
