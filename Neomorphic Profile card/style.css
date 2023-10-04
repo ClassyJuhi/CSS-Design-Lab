@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: #ecf0f3;
+}
+.card{
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,3px 3px 5px #ceced1;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5px;
+}
+.image{
+    border-radius: 50%;
+    border: 10px solid #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: left;
+}
+h3{
+    margin: 15px 0 5px 0;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+}
+li{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0 10px;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.fa-facebook-f{
+    color: #4267B2;
+}
+.fa-twitter{
+    color: #1DA1F2;
+}
+.fa-instagram{
+    color: #E1306C;
+}
+.fa-youtube{
+    color: #ff0000;
+}
+li:hover{
+    box-shadow: -3px -3px 7px #ffffff inset, 3px 3px 5px #ceced1 inset;
+}
+input[type="button"]{
+    padding: 10px 20px;
+    margin: 10px 5px 15px 5px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+input[type="button"]:hover{
+    box-shadow: -3px -3px 7px #ffffff inset, 3px 3px 5px #ceced1 inset;
+}
+.overview{
+    margin: 10px 0;
+}
+.overview i{
+    padding-right: 2px;
+}
+span{
+    padding-right: 10px;
+    margin: 10px;
+    border-right: 2px solid #ceced1;
+}
+span i:hover{
+    background-color: black;
+}
