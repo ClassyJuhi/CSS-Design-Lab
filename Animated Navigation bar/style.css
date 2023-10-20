@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color:#f2f2f2;
+}
+nav{
+    background-color:#f2f2f2;
+    box-shadow: 10px 10px 10px #e5e5e5 inset, -10px -10px 10px #ffffff inset;
+    border-radius: 10px;
+    padding: 0 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav label{
+    list-style-type: none;
+    margin: 0 5px;
+    padding: 15px;
+    font-size: 25px;
+    color:#1a5b69;
+    z-index: 1;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+nav label:hover{
+    background-color:#c0d6f0;
+}
+nav label span{
+    vertical-align: bottom;
+    font-size: 50px;
+}
+input[type="radio"]{
+    display: none;
+}
+#home:checked ~ nav label.home{
+    background-color: #1a5b69;
+    color: #ffffff;
+    padding: 10px 15px;
+    box-shadow: 10px 10px 10px #144854 inset, -10px -10px 10px #477b87 inset;
+}
+#blog:checked ~ nav label.blog{
+    background-color: #1a5b69;
+    color: #ffffff;
+    padding: 10px 15px;
+    box-shadow: 10px 10px 10px #144854 inset, -10px -10px 10px #477b87 inset;
+}
+#code:checked ~ nav label.code{
+    background-color: #1a5b69;
+    color: #ffffff;
+    padding: 10px 15px;
+    box-shadow: 10px 10px 10px #144854 inset, -10px -10px 10px #477b87 inset;
+}
+#help:checked ~ nav label.help{
+    background-color: #1a5b69;
+    color: #ffffff;
+    padding: 10px 15px;
+    box-shadow: 10px 10px 10px #144854 inset, -10px -10px 10px #477b87 inset;
+}
+#about:checked ~ nav label.about{
+    background-color: #1a5b69;
+    color: #ffffff;
+    padding: 10px 15px;
+    box-shadow: 10px 10px 10px #144854 inset, -10px -10px 10px #477b87 inset;
+}
