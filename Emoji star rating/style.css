@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #deb873;
+    color: #140d02;
+    font-weight: 600;
+}
+.mainContainer{
+    width: 280px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.rateContainer{
+    margin-top: 30px;
+}
+input[type="radio"]{
+    display: none;
+}
+.emoji{
+    height: 125px;
+    width: 125px;
+    display: none;
+}
+.emoji img{
+    height: 125px;
+    width: 125px;
+    object-fit: cover;
+    object-position: center;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.star{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer{
+    width: 100%;
+    padding: 15px 10px;
+    border-top: 1px solid #140d02;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(#ffffff,#ffffff, #e5e5e5);
+    border-radius: 0 0 10px 10px;
+}
+.number{
+    display: flex;
+    flex-direction: row;
+}
+
+
+input[type="radio"]:not(checked)~ .rateContainer .default{
+    display: block;
+}
+input[type="radio"]:checked~ .rateContainer .default{
+    display: none;
+}
+
+#emoji1:checked~.rateContainer .emoji1{
+    display: block;
+}
+#emoji2:checked~.rateContainer .emoji2{
+    display: block;
+}
+#emoji3:checked~.rateContainer .emoji3{
+    display: block;
+}
+#emoji4:checked~.rateContainer .emoji4{
+    display: block;
+}
+#emoji5:checked~.rateContainer .emoji5{
+    display: block;
+}
+
+
+
+label span{
+    color: #f4e7d0;
+}
+#emoji1:checked~.rateContainer .emoji1 span{
+    color: #e5b72d;
+}
+
+#emoji2:checked~.rateContainer .emoji1 span{
+    color: #e5b72d;
+}
+#emoji2:checked~.rateContainer .emoji2 span{
+    color: #e5b72d;
+}
+
+#emoji3:checked~.rateContainer .emoji1 span{
+    color: #e5b72d;
+}
+#emoji3:checked~.rateContainer .emoji2 span{
+    color: #ffcc33;
+}
+#emoji3:checked~.rateContainer .emoji3 span{
+    color: #e5b72d;
+}
+
+#emoji4:checked~.rateContainer .emoji1 span{
+    color: #e5b72d;
+}
+#emoji4:checked~.rateContainer .emoji2 span{
+    color: #e5b72d;
+}
+#emoji4:checked~.rateContainer .emoji3 span{
+    color: #e5b72d;
+}
+#emoji4:checked~.rateContainer .emoji4 span{
+    color: #e5b72d;
+}
+
+#emoji5:checked~.rateContainer .emoji1 span{
+    color: #e5b72d;
+}
+#emoji5:checked~.rateContainer .emoji2 span{
+    color: #e5b72d;
+}
+#emoji5:checked~.rateContainer .emoji3 span{
+    color: #e5b72d;
+}
+#emoji5:checked~.rateContainer .emoji4 span{
+    color: #e5b72d;
+}
+#emoji5:checked~.rateContainer .emoji5 span{
+    color: #e5b72d;
+}
+
+
+.rateContainer footer .rate{
+    display: none;
+}
+
+
+#emoji1:checked~.rateContainer footer .rate1{
+    display: block;
+}
+#emoji2:checked~.rateContainer footer .rate2{
+    display: block;
+}
+#emoji3:checked~.rateContainer footer .rate3{
+    display: block;
+}
+#emoji4:checked~.rateContainer footer .rate4{
+    display: block;
+}
+#emoji5:checked~.rateContainer footer .rate5{
+    display: block;
+}
