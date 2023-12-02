@@ -31,7 +31,7 @@ body{
     background-image: url(https://cdn.wallpapersafari.com/17/17/5f7pHi.jpg);
     background-size: cover;
     background-position: center;
-    background-clip: text;
+    -webkit-background-clip: text;
 }
 @keyframes color{
     0%{
