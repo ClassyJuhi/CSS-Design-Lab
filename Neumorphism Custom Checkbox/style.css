@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ecf0f3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+.mainContainer{
+    padding: 50px;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+label{
+    height: 80px;
+    width: 200px;
+    border-radius: 50px;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+    position: relative;
+}
+label::before{
+    content: "";
+    border-radius: 50px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff inset, 3px 3px 5px #ceced1 inset;
+}
+label::after{
+    content: "";
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+#button{
+    display: none;
+}
+#button:checked ~ label:after{
+    animation: check 0.5s ease-in-out forwards;
+    left: 120px;
+}
+#button:not(:checked) ~ label:after{
+    animation: uncheck 0.5s ease-in-out forwards;
+    left: 0;
+}
+span{
+    margin-left: 50px;
+    color: #a7a3bb;
+    display: none;
+}
+#button:checked ~ .checked{
+    display: block;
+    color: #1DA1F2;
+}
+#button:not(:checked) ~ .unchecked{
+    display: block;
+}
+
+@keyframes check{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 120px;
+    }
+}
+@keyframes uncheck{
+    0%{
+        left: 120px;
+    }
+    100%{
+        left: 0;
+    }
+}
