@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #726fdf;
+}
+.mainContainer{
+    width: 85%;
+    height: auto;
+    padding: 40px 50px;
+    border-radius: 15px;
+    background: #ecf0f3;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.mainContainer::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 15px;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff inset,3px 3px 5px #ceced1 inset;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill h3{
+    align-self: flex-start;
+    margin: 15px 0 7px 0;
+    margin-left: 10px;
+    position: relative;
+}
+.skillBar{
+    width: 100%;
+    height: 15px;
+    border-radius: 15px;
+    background: #ecf0f3;
+    animation: skillbg 0.15s linear forwards;
+    position: relative;
+    box-shadow: -3px -3px 7px #ffffff,3px 3px 5px #ceced1;
+}
+.skillBar::before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    border-radius: 15px;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff inset,3px 3px 5px #ceced1 inset;
+}
+@keyframes skillbg{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.skillPercentage{
+    height: 15px;
+    border-radius: 15px;
+    align-self: flex-start;
+    transform: translateY(-15px);
+    position: relative;
+    background: #726fdf;
+    box-shadow: -6px -6px 14px #807de2 inset,6px 6px 10px #6663c8 inset;
+}
+.dialogBox{
+    width: 45px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: -40px;
+    left: 95%;
+    display: block;
+    color: white;
+    background-color: #041c36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dialogBox::before{
+    content: "";
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: 85%;
+    left: 73.5%;
+    background-color: #041c36;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+}
+
+.skill1 .skillPercentage{
+    animation: skillMeter1 1.5s linear 0.15s forwards;
+}
+.skill2 .skillPercentage{
+    animation: skillMeter2 1.5s linear 0.15s forwards;
+}
+.skill3 .skillPercentage{
+    animation: skillMeter3 1.5s linear 0.15s forwards;
+}
+.skill4 .skillPercentage{
+    animation: skillMeter4 1.5s linear 0.15s forwards;
+}
+.skill5 .skillPercentage{
+    animation: skillMeter5 1.5s linear 0.15s forwards;
+}
+
+ @keyframes skillMeter1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+ }
+ @keyframes skillMeter2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+ }
+ @keyframes skillMeter3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+ }
+ @keyframes skillMeter4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+ }
+ @keyframes skillMeter5{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+ }
