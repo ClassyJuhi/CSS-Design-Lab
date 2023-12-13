@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#9b8394, #4f3748);
+}
+.container{
+    background-color: #9b8394;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.container h2{
+    padding: 15px 50px;
+    background-color: #4f3748;
+    color: #9b8394;
+    border-radius: 10px 10px 0 0 ;
+    margin-bottom: 20px;
+}
+input{
+    display: none;
+}
+label{
+    border: 1px solid #4f3748;
+    border-radius: 5px;
+    padding: 12px 25px;
+    padding-left: 50px;
+    margin: 10px 30px;
+    position: relative;
+}
+label::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background: linear-gradient(#9b8394, #4f3748);
+    display: inline-block;
+    position: absolute;
+    bottom: 28%;
+    left: 10%;
+}
+label::after{
+    content: "";
+    height: 8px;
+    width: 8px;
+    border-radius: 50px;
+    background-color: #4f3748;
+    display: inline-block;
+    position: absolute;
+    bottom: 43%;
+    left: 12.75%;
+    display: none;
+}
+#select1:checked ~ .select1,
+#select2:checked ~ .select2,
+#select3:checked ~ .select3,
+#select4:checked ~ .select4{
+    background-color: #4f3748;
+    color: aliceblue;
+}
+#select1:checked ~ .select1::after,
+#select2:checked ~ .select2::after,
+#select3:checked ~ .select3::after,
+#select4:checked ~ .select4::after{
+    display: block;
+}
