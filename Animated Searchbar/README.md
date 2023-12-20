@@ -1,6 +1,5 @@
-
-https://github.com/ClassyJuhi/CSS-Design-Lab/assets/103419567/8e806718-616f-47e2-87e5-b91f55c73b56
 Codepen : https://codepen.io/Classy_Juhi/pen/wvQVwOL
 
+![image](https://github.com/ClassyJuhi/CSS-Design-Lab/assets/103419567/f3319529-729b-491c-b1e9-fc8f90ad75bb)
 
-Uploading Animated Searchbar - Google Chrome 2023-12-20 19-25-57.mp4…
+![image](https://github.com/ClassyJuhi/CSS-Design-Lab/assets/103419567/2b29cbae-2fd8-40ef-baf5-0f76f48b545e)
