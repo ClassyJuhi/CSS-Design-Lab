@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(white, #5b215a);
+}
+.imageContainer{
+    height: 500px;
+    width: 700px;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: imageSlider 20s linear infinite;
+    border: 10px solid #490948;
+}
+@keyframes imageSlider {
+    0%{
+        background: url(https://media.istockphoto.com/id/155381519/photo/romantic-paris-with-tour-eiffel.jpg?s=612x612&w=0&k=20&c=tZO0BKZ4VT_FN09FgsKFLNxTdAH7ETjQOQkHSufz1x8=);
+        background-size: cover;
+        border-radius: 15px;
+    }
+    20%{
+        background: url(https://images.unsplash.com/photo-1507752533523-5186b0bc4c43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGFyayUyMGNpdHl8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+        background-size: cover;
+        border-radius: 15px;
+    }
+    40%{
+        background: url(https://cdn.wallpapersafari.com/57/80/oqO6QW.jpg);
+        background-size: cover;
+        border-radius: 15px;
+    }
+    60%{
+        background: url(https://i.pinimg.com/originals/37/2f/59/372f59c1a4098a2822749e4708709abd.jpg);
+        background-size: cover;
+        border-radius: 15px;
+    }
+    80%{
+        background: url(https://c4.wallpaperflare.com/wallpaper/902/1020/972/usa-new-york-top-view-skyscrapers-wallpaper-preview.jpg);
+        background-size: cover;
+        border-radius: 15px;
+    }
+    100%{
+        background: url(https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/01/og110.jpg);
+        background-size: cover;
+        border-radius: 15px;
+    }
+}
+.imageContainer:hover{
+    animation-play-state: paused;
+}
