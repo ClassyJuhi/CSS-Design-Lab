@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ecf0f3;
+    color: #31344b;
+    font-weight: 500;
+}
+form{
+    padding: 40px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,3px 3px 5px #ceced1;
+}
+.input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff inset,3px 3px 5px #ceced1 inset;
+}
+input{
+    border: none;
+    outline: none;
+    background: #ecf0f3;
+    padding-left: 5px;
+}
+.input span{
+    color: #4b4d60;
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,3px 3px 5px #ceced1;
+}
+input[type="submit"]:hover{
+    box-shadow: -3px -3px 7px #ffffff inset,3px 3px 5px #ceced1 inset;
+}
+p{
+    font-size: 13px;
+} 
+
+a{
+    text-decoration: none;
+    color: #1DA1F2;
+}
+a:hover{
+    text-decoration: 2px underline;
+}
+.linkHeader{
+    margin: 15px 0 0 0 ;
+    font-size: 20px;
+    font-weight: 600;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.link{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,3px 3px 5px #ceced1;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link:hover{
+    box-shadow: inset -3px -3px 7px #ffffff,inset 3px 3px 5px #ceced1;
+}
+.link1{
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background:linear-gradient(to right bottom,#18ff3e	,#2571ff	,#ff0232,#ffb927	,#474749);
+    -webkit-background-clip: text;
+}
+.link2 i{
+    color: #1d3469;
+}
+.link3 i{
+    color: #1DA1F2;
+}
+.link4 i{
+    color: #0077b5;
+}
+i{
+    font-size: 25px;
+}
